@@ -45,6 +45,7 @@ module Faker
         Lorem.words(rand(3)).join('/')
       end
 
+      # based on http://stackoverflow.com/questions/830596/what-type-of-id-does-youtube-use-for-their-videos/1638761#1638761
       def youtube_url
         ["http://www.youtube.com/watch?v=", SecureRandom.base64(8).gsub("/","_").gsub(/=+$/,"").gsub(/\+/,"-")].join
       end
