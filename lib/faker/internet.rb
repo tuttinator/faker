@@ -30,7 +30,7 @@ module Faker
       end
 
       def domain_suffix
-        %w(co.uk com us uk ca biz info name).rand
+        %w(co.uk com co.nz org.nz).rand
       end
 
       def ip_address
@@ -43,6 +43,10 @@ module Faker
 
       def url_path
         Lorem.words(rand(3)).join('/')
+      end
+
+      def youtube_url
+        ["http://www.youtube.com/watch?v=", SecureRandom.base64(8).gsub("/","_").gsub(/=+$/,"").gsub(/\+/,"-")].join
       end
 
       def protocol
