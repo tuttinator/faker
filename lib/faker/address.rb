@@ -1,3 +1,4 @@
+# encoding: UTF-8
 module Faker
   class Address
     class << self
