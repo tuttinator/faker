@@ -31,6 +31,7 @@ Gem::Specification.new do |s|
      "lib/faker/address.rb",
      "lib/faker/company.rb",
      "lib/faker/internet.rb",
+     "lib/faker/kiwisms.rb",
      "lib/faker/lorem.rb",
      "lib/faker/name.rb",
      "lib/faker/phone_number.rb",
